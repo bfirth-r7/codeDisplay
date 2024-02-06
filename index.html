@@ -2,10 +2,12 @@
   <head>
      <script type="text/javascript">
        $(function(){
-          debugger;
-             var query = window.location.search.substring(1);
-             var qs = parse_query_string(query);
-         alert(qs);
+            const queryString = window.location.search;
+            console.log(queryString);
+           const urlParams = new URLSearchParams(queryString);
+           const code = urlParams.get('code')
+          console.log(code);
+           alert(queryString);
        });
     </script>
   </head>
