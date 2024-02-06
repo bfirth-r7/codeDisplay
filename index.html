@@ -1,15 +1,16 @@
 <html>
   <head>
-     <script type="text/javascript">
-            const queryString = window.location.search;
-            console.log(queryString);
-           const urlParams = new URLSearchParams(queryString);
-           const code = urlParams.get('code')
-          console.log(code);
-           alert('Code is ' +code);
-    </script>
   </head>
  
-  <body>Hello World</body>
+  <body>
+    <p>Hello Cormac, here is your access code: <br/> </p>
+
+     <script type="text/javascript">
+           const queryString = window.location.search;
+           const urlParams = new URLSearchParams(queryString);
+           const code = urlParams.get('code')
+          document.write(code)
+    </script>
+  </body>
 </html>
 
